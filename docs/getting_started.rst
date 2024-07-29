@@ -304,7 +304,7 @@ we can install these in the Python virtual environment by running:
 .. code-block:: shell
 
   source nvflare-env/bin/activate
-  python3 -m pip install -r simulator-example/requirements.txt
+  python3 -m pip install -r simulator-example/hello-pt/requirements.txt
 
 If using the Dockerfile above to run in a container, these dependencies have already been installed.
 
@@ -315,7 +315,7 @@ run on two clients using two threads:
 .. code-block:: shell
 
   mkdir simulator-example/workspace
-  nvflare simulator -w simulator-example/workspace -n 2 -t 2 simulator-example/hello-pt/jobs/hello-pt
+  nvflare simulator -w simulator-example/workspace -n 2 -t 2 simulator-example/jobs/hello-pt
 
 Now you will see output streaming from the server and client processes as they execute the federated
 application.  Once the run completes, your workspace directory will contain the input application configuration
